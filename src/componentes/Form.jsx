@@ -19,7 +19,10 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (usuario.nombre.trim().length >= 3 && usuario.apellido.length >= 6) {
+    if (
+      usuario.nombre.trim().length >= 3 &&
+      usuario.apellido.trim().length >= 6
+    ) {
       setMostrar(true);
       setErr(false);
     } else {
